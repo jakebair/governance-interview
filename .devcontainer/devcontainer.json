@@ -1,7 +1,7 @@
 {
 	"build": { "dockerfile": "Dockerfile" },
 	"features": { 
-		"azure-cli": "latest", 
+		"ghcr.io/devcontainers/features/azure-cli:1": {},
 	    "ghcr.io/devcontainers/features/terraform:1": {},
 	    "ghcr.io/devcontainers/features/powershell:1": {}
 	},
@@ -12,5 +12,6 @@
 				"ms-azuretools.vscode-azureterraform"
 			]
 		}
-	}
+	},
+	"postCreateCommand": "echo '. /etc/bash_completion.d/azure-cli' >> ~/.bashrc && terraform -install-autocomplete"
 }

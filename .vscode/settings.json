@@ -1,0 +1,7 @@
+{
+    "[terraform]": {
+        
+        "editor.formatOnSave": true
+
+    }
+}
